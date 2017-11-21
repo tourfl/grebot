@@ -6,6 +6,9 @@ from flask import Flask, request
 from pymessenger.bot import Bot
 
 app = Flask(__name__)
+if 'DYNO' in os.environ:
+    app.logger.addHandler(logging.StreamHandler(sys.stdout))
+    app.logger.setLevel(logging.ERROR)
 
 ACCESS_TOKEN = "EAAB79k2TrWEBALuTJICA6v6nFI2tWGLhU58HH9fMK0RZCF4pS1LhwZCEXS1CbrGHi3M1fy0W7K3YobFS9ZBDN4X3W1rUv1wX6szMTVVyPrdOuya0DQWpyZB5PQNqALQT3Kqr6p2z5CGiIa0dGFl3DgOR4J2Ftr23T8sYh02L2VfcAKpJd7aI"
 VERIFY_TOKEN = "english"
