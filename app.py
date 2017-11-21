@@ -4,6 +4,9 @@ in any messages that the bot receives and echos it back.
 """
 from flask import Flask, request
 from pymessenger.bot import Bot
+import os
+import sys
+import logging
 
 app = Flask(__name__)
 if 'DYNO' in os.environ:
