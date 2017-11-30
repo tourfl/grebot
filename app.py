@@ -8,7 +8,7 @@ import os
 import sys
 import logging
 import json
-from mycode import myfunction
+import gre
 
 app = Flask(__name__)
 if 'DYNO' in os.environ:
@@ -37,8 +37,7 @@ def hello():
                     recipient_id = x['sender']['id']
                     if x['message'].get('text'):
                         message = x['message']['text']
-                        with open('static/data.json') as data:
-                            bot.send_text_message(recipient_id, json.dumps(json.load(data)))
+                        bot.send_text_message(recipient_id, gre.process(message, recipient_id)))
                 else:
                     pass
         return "Success"
