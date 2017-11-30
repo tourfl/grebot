@@ -7,7 +7,6 @@ from pymessenger.bot import Bot
 import os
 import sys
 import logging
-import json
 import gre
 
 app = Flask(__name__)
@@ -37,7 +36,7 @@ def hello():
                     recipient_id = x['sender']['id']
                     if x['message'].get('text'):
                         message = x['message']['text']
-                        bot.send_text_message(recipient_id, gre.process(message, recipient_id)))
+                        bot.send_text_message(recipient_id, gre.process(message, recipient_id))
                 else:
                     pass
         return "Success"
