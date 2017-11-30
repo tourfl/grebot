@@ -36,7 +36,8 @@ def hello():
                     recipient_id = x['sender']['id']
                     if x['message'].get('text'):
                         message = x['message']['text']
-                        bot.send_text_message(recipient_id, message)
+                        with open('static/data.json') as data:
+                            bot.send_text_message(recipient_id, data)
                 else:
                     pass
         return "Success"
