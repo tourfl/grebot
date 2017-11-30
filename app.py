@@ -7,6 +7,7 @@ from pymessenger.bot import Bot
 import os
 import sys
 import logging
+from mycode import myfunction
 
 app = Flask(__name__)
 if 'DYNO' in os.environ:
