@@ -1,0 +1,14 @@
+{  
+   "RU":{  
+      "Centre":{  
+         "midi":"le Home",
+         "soir":"aucun Restaurant ouvert"
+      },
+      "Campus":{  
+         "soir":"Café Littéraire"
+      },
+      "Presqu'ile":{  
+         "soir":"Escape"
+      }
+   }
+}

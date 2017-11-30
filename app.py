@@ -36,9 +36,6 @@ def hello():
                     if x['message'].get('text'):
                         message = x['message']['text']
                         bot.send_text_message(recipient_id, message)
-                    if x['message'].get('attachments'):
-                        for att in x['message'].get('attachments'):
-                            bot.send_text_message(recipient_id, "je ne renvoie pas les images couillon")
                 else:
                     pass
         return "Success"
