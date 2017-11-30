@@ -7,6 +7,7 @@ from pymessenger.bot import Bot
 import os
 import sys
 import logging
+import json
 from mycode import myfunction
 
 app = Flask(__name__)
@@ -37,7 +38,7 @@ def hello():
                     if x['message'].get('text'):
                         message = x['message']['text']
                         with open('static/data.json') as data:
-                            bot.send_text_message(recipient_id, data)
+                            bot.send_text_message(recipient_id, json.dumps(json.load(data)))
                 else:
                     pass
         return "Success"
