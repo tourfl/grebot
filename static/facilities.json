@@ -1,0 +1,92 @@
+[
+  {
+    "id": 0,
+    "name": "Le home",
+    "Horaires": "Fron monday to friday 6am - 8pm",
+    "adress": "6 place Pasteur 38 000 Grenoble"
+  },
+  {
+    "id": 1,
+    "name": "Green-er",
+    "Horaires": "Fron monday to friday 11h30am - 1pm",
+    "adress": "21 Avenue des martyrs, 38 000 Grenoble"
+  },
+  {
+    "id": 2,
+    "name": "Diderot",
+    "Horaires": "Fron monday to friday 11h30am - 1h30pm || 6h30pm - 7h50pm",
+    "adress": "Rue des universités Domaine Universitaire 38400 St Martin d'Hères "
+  },
+  {
+    "id": 3,
+    "name": "Minatec",
+    "Horaires": "Fron monday to friday 11h30am - 13h30pm",
+    "adress": "61 rue Esclangon 38000 Grenoble"
+  },
+  {
+    "id": 4,
+    "name": "Mandela cafe",
+    "Horaires": "Fron monday to friday 9h30am - 1h30pm",
+    "adress": "63 rue Esclangon 38000 Grenoble"
+  },
+  {
+    "id": 5,
+    "name": "Syphax Tandoori",
+    "Horaires": "Every day at lunch until late at night",
+    "adress": "15 cours Jean Jaures, 38000 Grenoble"
+  },
+  {
+    "id": 6,
+    "name": "Miam's",
+    "Horaires": "11am - 1am 7d/7",
+    "adress": "6 rue Chenoise, 38000 Grenoble"
+  },
+  {
+    "id": 7,
+    "name": "Tacos de Grenoble",
+    "Horaires": "11am - 1am 7d/7",
+    "adress": "38 cours Jean Jaurès, 38000 Grenoble"
+  },
+  {
+    "id": 8,
+    "name": "En cas de Faim",
+    "Horaires": "11am - 11pm 7d/7",
+    "adress": "25 Avenue Jeanne d'Arc"
+  },
+  {
+    "id": 9,
+    "name": "Spaccanapoli",
+    "Horaires": "Open every day at lunch until late at night",
+    "adress": "9 rue Stalingrad, 38000 Grenoble"
+  },
+  {
+    "id": 10,
+    "name": "Very Food",
+    "Horaires": "Open every day at lunch until late at night",
+    "adress": "63 Place Saint Bruno"
+  },
+  {
+    "id": 11,
+    "name": "Le Palais",
+    "Horaires": "Open every day",
+    "adress": "96 cours Berriat, 38000 Grenoble"
+  },
+  {
+    "id": 12,
+    "name": "Tacos de Lyon",
+    "Horaires": "Open everay day 11h30am - 1am ",
+    "adress": "4 rue Brocherie, 38000 Grenoble"
+  },
+  {
+    "id": 13,
+    "name": "Centre de Santé inter universitaire",
+    "Horaires": "",
+    "adress": "180 rue de la piscine, 38400, Saint Martin d'hèrès"
+  },
+  {
+    "id": 14,
+    "name": "Centre de Santé inter universitaire",
+    "Horaires": "Tuesday 10am-5pm, Thursday 8am-5pm",
+    "adress": "10 rue vassieux en vercors, 38000 Grenoble"
+  }
+]

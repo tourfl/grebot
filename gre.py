@@ -12,21 +12,35 @@ def process(in_message, str_id):
         conversation = []
         users[str_id] = conversation
 
-    with open('static/data.json', 'r') as fd:
+    with open('static/tree.json', 'r') as fd:
         answers = json.load(fd)  # load data file into a dic
 
     for key in conversation:
         answers = answers[key]  # go through the tree
 
-    try:
-        out_message = json.dumps(list(answers[in_message].keys()))
+    if in_message is not "question" and in_message in answers:
+        answers = answers[in_message]
         conversation.append(in_message)
         users[str_id] = conversation
-    except KeyError:
-        out_message = "this is not a good answer"
-    except AttributeError:
-        out_message = answers[in_message]
-        users.pop(str_id)
+
+        if type(answers) is list or type(answers) is int:
+            users.pop(str_id)
+
+            with open('static/users.json', 'w') as fu:
+                json.dump(users, fu)
+
+            with open('static/facilities.json', 'r') as ff:
+                facilities = json.load(ff)
+
+                if type(answers) is list:
+                    return print_facilities("This facilities might be interesting for you:\n", [facilities[i] for i in answers])
+                else:
+                    return print_facilities("This facility might be interesting for you:\n", facilities[answers], False)
+
+    out_message = answers.pop("question") + "\n"
+
+    for prop in answers:
+        out_message += prop + "\t"
 
     with open('static/users.json', 'w') as fu:
         json.dump(users, fu)
@@ -34,8 +48,21 @@ def process(in_message, str_id):
     return out_message
 
 
+def print_facilities(out_message, facilities, many=True):
+
+    if many is False:
+        facilities = [facilities]
+
+    for facility in facilities:
+        facility.pop("id")
+        out_message += "\n"
+        for key, value in facility.items():
+            out_message += key + ": " + value + "\n"
+    return out_message
+
+
 def test():
-    input = "midi"
+    input = "Presqu'ile"
     id = "18"
 
     output = process(input, id)

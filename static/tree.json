@@ -1,0 +1,37 @@
+{
+   "question":"Hello! My name is GreBot. I’m your assistant to try and find University Restaurants, Clinics and much more in the towns of Grenoble and St Martin d’Heres. \nGo ahead and ask away! What do you wish to know about?",
+  "University Restaurants": {
+   "question": "Where in Grenoble do you wish to eat?",
+    "Centre": {
+      "question": "Do you wish to have a lunch or dinner?",
+      "noon": 0
+    },
+    "Campus": {
+      "question": "Do you wish to have a lunch or dinner?",
+      "noon" : 2
+      
+      
+    },
+    "Presqu'ile": {
+      "question": "Do you wish to have a lunch or dinner?",
+      "morning": 4,
+      "noon": [1, 3]
+    }
+  },
+  "Health": {
+   "question": "Where in Grenoble do you wish to find medical facilities?",
+    "Campus": 13,
+    "Presqu'ile": 14
+  },
+  
+  "Tacos": {
+      "question": "Where in Grenoble do you wish to eat?",
+      "Campus": 6,
+      "Station": [5, 7],
+      "Notre-Dame": [10, 12],
+      "Saint-Bruno":11,
+      "PPM":[9, 8],
+      "Alsace-Lorraine":[5, 7]
+    
+  }
+}
