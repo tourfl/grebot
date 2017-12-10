@@ -37,10 +37,10 @@ def process(in_message, str_id):
                 else:
                     return print_facilities("This facility might be interesting for you:\n", facilities[answers], False)
 
-    out_message = answers.pop("question") + "\n"
+    out_message = answers.pop("question")
 
     for prop in answers:
-        out_message += prop + "\t"
+        out_message += "\n- " + prop
 
     with open('static/users.json', 'w') as fu:
         json.dump(users, fu)
